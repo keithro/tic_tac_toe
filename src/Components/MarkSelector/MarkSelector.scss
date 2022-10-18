@@ -1,0 +1,48 @@
+@import './../../sassStyles/variables';
+@import './../../sassStyles/mixins';
+
+.mark-selector {
+  background-color: $semi-dark-navy;
+  border-radius: $radius-lg;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-xl;
+  @include box-shadow($shadow-lg, $dark-gray);
+
+  &__heading {
+    margin-bottom: $spacing-lg;
+  }
+  
+  &__toggle {
+    background-color: $dark-navy;
+    border-radius: $radius-sm;
+    padding: $spacing-xs;
+  }
+  
+  &__option {
+    border-radius: $radius-sm;
+    display: inline-block;
+    padding: $spacing-sm;
+    width: 50%;
+    
+    svg {
+      fill: $silver;
+    }
+
+    &:hover {
+      background-color: lighten($color: $dark-navy, $amount: 2%);
+    }
+    
+    &.selected {
+      background-color: $silver;
+      
+      svg {
+        fill: $dark-navy;
+      }
+    }
+  }
+  
+  &__text {
+    margin-top: $spacing-lg;
+    opacity: 50%;
+  }
+}

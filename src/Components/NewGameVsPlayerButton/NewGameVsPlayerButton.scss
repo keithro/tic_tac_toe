@@ -1,0 +1,17 @@
+@import './../../sassStyles/mixins';
+@import './../../sassStyles/variables';
+
+.new-game-vs-player-button {
+  font-size: 16px;
+  letter-spacing: $letter-spacing-sm;
+  padding: $spacing-md;
+  margin-bottom: $spacing-lg;
+  background-color: $light-blue;
+  border: none;
+  border-radius: $radius-lg;
+  @include box-shadow($shadow-lg, darken($light-blue, 15%));
+
+  &:hover {
+    background-color: $light-blue-hover;
+  }
+}

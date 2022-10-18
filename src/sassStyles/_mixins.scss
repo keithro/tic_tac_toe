@@ -1,0 +1,14 @@
+
+// BOX SHADOWS
+
+@mixin box-shadow($height, $color) {
+  box-shadow: 0 $height 0 $color;
+}
+
+// @mixin box-shadow($height, $color, $inset: false) {
+//   @if $inset {
+//     box-shadow: 0 $height 0 $color inset;
+//   } else {
+//     box-shadow: 0 $height 0 $color;
+//   }
+// }

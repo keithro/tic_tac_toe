@@ -1,0 +1,11 @@
+@import "./../../sassStyles/variables";
+
+.new-game-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__logo-container {
+    margin-bottom: $spacing-xl;
+  }
+}

@@ -1,0 +1,12 @@
+@import "./../../sassStyles/variables";
+
+.logo {
+  svg:first-of-type {
+    fill: $light-blue;
+    margin-right: $spacing-sm;
+  }
+
+  svg:last-of-type {
+    fill: $light-yellow;
+  }
+}
